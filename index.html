@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Terms Explaine  Mrs.TROTTER & M.BLORFAN d</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .term-group {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            margin-bottom: 15px;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            display: none;
+            border-radius: 4px;
+            position: relative;
+        }
+        .visible {
+            display: block;
+        }
+        .speech-controls {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        .speech-icon {
+            margin-right: 5px;
+        }
+        .language-selector {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .language-selector label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .language-selector select {
+            width: auto;
+            padding: 8px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solar Energy Terms Explained-M.BLORFAN & Mrs.TROTTER</h1>
+    
+    <div class="language-selector">
+        <label for="voiceSelector">Voice Language:</label>
+        <select id="voiceSelector">
+            <option value="en-US">English (USA)</option>
+            <option value="en-GB">English (UK)</option>
+        </select>
+    </div>
+    
+    <div class="term-group">
+        <select id="termSelector" onchange="showExplanation()">
+            <option value="">-- Select a solar term --</option>
+            <option value="solarModules">Solar Modules</option>
+            <option value="mountingRacks">Mounting racks</option>
+            <option value="stringInverter">String inverter</option>
+            <option value="netMeter">Net meter</option>
+            <option value="monitoringDevice">Monitoring device</option>
+            <option value="solarFarm">Solar farm</option>
+            <option value="trackingSystem">Tracking system</option>
+            <option value="centralInverter">Central inverter</option>
+            <option value="transformer">Transformer</option>
+            <option value="gridConnection">Grid connection</option>
+            <option value="thinFilmModules">Thin-film modules</option>
+            <option value="flexibleBacking">Flexible backing</option>
+            <option value="microinverters">Microinverters</option>
+            <option value="adhesiveMounts">Adhesive mounts</option>
+            <option value="performanceOptimizers">Performance optimizers</option>
+            <option value="trackingArrays">Tracking arrays</option>
+            <option value="driveMotors">Drive motors</option>
+            <option value="controlSystem">Control system</option>
+            <option value="foundationPosts">Foundation posts</option>
+            <option value="weatherSensors">Weather sensors</option>
+            <option value="solarShingles">Solar shingles</option>
+            <option value="pvGlass">PV glass</option>
+            <option value="structuralFraming">Structural framing</option>
+            <option value="buildingManagementSystem">Building management system</option>
+            <option value="architecturalInverters">Architectural inverters</option>
+            <option value="solarArray">Solar array</option>
+            <option value="chargeController">Charge controller</option>
+            <option value="batteryBank">Battery bank</option>
+            <option value="dcAcInverter">DC-AC inverter</option>
+            <option value="backupGenerator">Backup generator</option>
+            <option value="floatingPlatforms">Floating platforms</option>
+            <option value="marineGradePanels">Marine-grade panels</option>
+            <option value="anchoringSystem">Anchoring system</option>
+            <option value="underwaterCables">Underwater cables</option>
+            <option value="corrosionResistantInverters">Corrosion-resistant inverters</option>
+            <option value="concentratorOptics">Concentrator optics</option>
+            <option value="multiJunctionCells">Multi-junction cells</option>
+            <option value="trackingMechanism">Tracking mechanism</option>
+            <option value="heatSinks">Heat sinks</option>
+            <option value="highVoltageConverters">High-voltage converters</option>
+            <option value="canopyStructure">Canopy structure</option>
+            <option value="bifacialPanels">Bifacial panels</option>
+            <option value="evChargers">EV chargers</option>
+            <option value="structuralSupports">Structural supports</option>
+            <option value="tiltMechanisms">Tilt mechanisms</option>
+            <option value="elevatedArrays">Elevated arrays</option>
+            <option value="specializedCrops">Specialized crops</option>
+            <option value="irrigationSystem">Irrigation system</option>
+            <option value="soilSensors">Soil sensors</option>
+            <option value="adjustableMounts">Adjustable mounts</option>
+            <option value="solarSatellites">Solar satellites</option>
+            <option value="microwaveTransmitters">Microwave transmitters</option>
+            <option value="rectennaArrays">Rectenna arrays</option>
+            <option value="attitudeControl">Attitude control</option>
+            <option value="thermalManagement">Thermal management</option>
+            <option value="perovskiteLayers">Perovskite layers</option>
+            <option value="electronTransport">Electron transport</option>
+            <option value="holeTransport">Hole transport</option>
+            <option value="substrateMaterials">Substrate materials</option>
+            <option value="encapsulation">Encapsulation</option>
+            <option value="hybridCollectors">Hybrid collectors</option>
+            <option value="heatExchangers">Heat exchangers</option>
+            <option value="fluidCirculation">Fluid circulation</option>
+            <option value="storageTanks">Storage tanks</option>
+            <option value="controlValves">Control valves</option>
+            <option value="foldablePanels">Foldable panels</option>
+            <option value="integratedBatteries">Integrated batteries</option>
+            <option value="chargeRegulator">Charge regulator</option>
+            <option value="dcOutputs">DC outputs</option>
+            <option value="carryingCase">Carrying case</option>
+            <option value="highPressurePumps">High-pressure pumps</option>
+            <option value="membraneModules">Membrane modules</option>
+            <option value="pretreatment">Pretreatment</option>
+            <option value="energyRecovery">Energy recovery</option>
+        </select>
+        
+        <div id="explanation" class="explanation">
+            <p>Select a term from the dropdown to see its explanation.</p>
+            <div class="speech-controls">
+                <button id="readBtn" onclick="readAloud()" disabled>
+                    <span class="speech-icon">🔊</span> Read Aloud
+                </button>
+                <button id="stopBtn" onclick="stopReading()" disabled>
+                    <span class="speech-icon">⏹️</span> Stop
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const explanations = {
+            solarModules: "Solar panels that turn sunlight into electricity.",
+            mountingRacks: "Metal frames that hold solar panels in place on roofs or the ground.",
+            stringInverter: "A box that changes the electricity from solar panels (DC) to the kind used in homes (AC).",
+            netMeter: "A special electricity meter that tracks power going to and from the grid.",
+            monitoringDevice: "A system that checks how well your solar panels are working.",
+            solarFarm: "A large area with many solar panels that makes electricity for many homes.",
+            trackingSystem: "Solar panels that move to follow the sun across the sky.",
+            centralInverter: "A large electricity converter used for big solar installations.",
+            transformer: "Equipment that changes electricity voltage for safe use.",
+            gridConnection: "Where your solar system connects to the public electricity network.",
+            thinFilmModules: "Lightweight, flexible solar panels made with thin layers.",
+            flexibleBacking: "The bendable base material for flexible solar panels.",
+            microinverters: "Small converters attached to each solar panel.",
+            adhesiveMounts: "Solar panel holders that stick down instead of using screws.",
+            performanceOptimizers: "Devices that help each panel work at its best.",
+            trackingArrays: "Groups of solar panels that move to follow the sun.",
+            driveMotors: "Motors that make solar trackers move.",
+            controlSystem: "The 'brain' that operates solar tracking equipment.",
+            foundationPosts: "Poles in the ground that support solar panel frames.",
+            weatherSensors: "Instruments that measure sun, wind, and temperature.",
+            solarShingles: "Roof tiles that make electricity like solar panels.",
+            pvGlass: "See-through windows that can generate power.",
+            structuralFraming: "Support structures for building solar installations.",
+            buildingManagementSystem: "Computer system that controls a building's solar power.",
+            architecturalInverters: "Power converters designed to look nice on buildings.",
+            solarArray: "A group of solar panels working together.",
+            chargeController: "Device that manages battery charging from solar panels.",
+            batteryBank: "A set of batteries that store solar energy.",
+            dcAcInverter: "Changes battery power (DC) to home power (AC).",
+            backupGenerator: "A fuel-powered generator for when solar isn't enough.",
+            floatingPlatforms: "Structures that hold solar panels on water.",
+            marineGradePanels: "Solar panels made to resist water damage.",
+            anchoringSystem: "What keeps floating solar platforms in place.",
+            underwaterCables: "Wires that carry power under water.",
+            corrosionResistantInverters: "Power converters made to withstand wet conditions.",
+            concentratorOptics: "Mirrors or lenses that focus sunlight onto small solar cells.",
+            multiJunctionCells: "High-tech solar cells with multiple layers for better efficiency.",
+            trackingMechanism: "The moving parts that make solar trackers work.",
+            heatSinks: "Metal parts that help cool solar equipment.",
+            highVoltageConverters: "Devices that increase voltage for long-distance power transfer.",
+            canopyStructure: "Solar panels mounted like a roof over parking lots.",
+            bifacialPanels: "Solar panels that make power from both sides.",
+            evChargers: "Electric car chargers powered by solar energy.",
+            structuralSupports: "Frames and poles that hold up solar panels.",
+            tiltMechanisms: "Adjustable mounts that change panel angles.",
+            elevatedArrays: "Solar panels raised up on tall frames.",
+            specializedCrops: "Plants grown underneath solar panels.",
+            irrigationSystem: "Watering systems powered by solar energy.",
+            soilSensors: "Devices that measure ground moisture and nutrients.",
+            adjustableMounts: "Solar panel holders with changeable angles.",
+            solarSatellites: "Spacecraft that collect solar power in orbit.",
+            microwaveTransmitters: "Equipment that sends solar power from space to Earth.",
+            rectennaArrays: "Ground receivers for space solar power.",
+            attitudeControl: "Systems that keep satellites pointed at the sun.",
+            thermalManagement: "Cooling systems for space solar equipment.",
+            perovskiteLayers: "New solar cell materials that could make panels cheaper.",
+            electronTransport: "How electricity moves through solar cell layers.",
+            holeTransport: "The movement of positive charges in solar cells.",
+            substrateMaterials: "The base layers that solar cells are built on.",
+            encapsulation: "Protective coatings that seal solar panels.",
+            hybridCollectors: "Systems that make both electricity and heat from sunlight.",
+            heatExchangers: "Devices that transfer heat in solar thermal systems.",
+            fluidCirculation: "Pumps and pipes that move heated liquids.",
+            storageTanks: "Containers that hold hot water or thermal fluids.",
+            controlValves: "Devices that regulate liquid flow in solar thermal systems.",
+            foldablePanels: "Solar panels that can bend or fold for easy transport.",
+            integratedBatteries: "Solar panels with built-in power storage.",
+            chargeRegulator: "Controls how batteries charge from portable solar panels.",
+            dcOutputs: "Plugs for direct solar power without conversion.",
+            carryingCase: "Protective bag for portable solar equipment.",
+            highPressurePumps: "Solar-powered water pumps with strong flow.",
+            membraneModules: "Filters for solar-powered water cleaning systems.",
+            pretreatment: "First cleaning step in solar water purification.",
+            energyRecovery: "Systems that reuse energy in solar processes."
+        };
+
+        let speechSynthesis = window.speechSynthesis;
+        let currentUtterance = null;
+
+        function showExplanation() {
+            const select = document.getElementById("termSelector");
+            const explanationDiv = document.getElementById("explanation");
+            const readBtn = document.getElementById("readBtn");
+            const stopBtn = document.getElementById("stopBtn");
+            const selectedValue = select.value;
+            
+            if (selectedValue && explanations[selectedValue]) {
+                const termName = select.options[select.selectedIndex].text;
+                const explanationText = explanations[selectedValue];
+                explanationDiv.innerHTML = `
+                    <p><strong>${termName}:</strong> ${explanationText}</p>
+                    <div class="speech-controls">
+                        <button id="readBtn" onclick="readAloud()">
+                            <span class="speech-icon">🔊</span> Read Aloud
+                        </button>
+                        <button id="stopBtn" onclick="stopReading()" disabled>
+                            <span class="speech-icon">⏹️</span> Stop
+                        </button>
+                    </div>
+                `;
+                explanationDiv.classList.add("visible");
+            } else {
+                explanationDiv.innerHTML = `
+                    <p>Select a term from the dropdown to see its explanation.</p>
+                    <div class="speech-controls">
+                        <button id="readBtn" onclick="readAloud()" disabled>
+                            <span class="speech-icon">🔊</span> Read Aloud
+                        </button>
+                        <button id="stopBtn" onclick="stopReading()" disabled>
+                            <span class="speech-icon">⏹️</span> Stop
+                        </button>
+                    </div>
+                `;
+                explanationDiv.classList.remove("visible");
+            }
+        }
+
+        function readAloud() {
+            const select = document.getElementById("termSelector");
+            const selectedValue = select.value;
+            const stopBtn = document.getElementById("stopBtn");
+            const readBtn = document.getElementById("readBtn");
+            const voiceSelector = document.getElementById("voiceSelector");
+            const selectedLanguage = voiceSelector.value;
+            
+            if (!selectedValue) return;
+            
+            // Stop any current speech
+            stopReading();
+            
+            const termName = select.options[select.selectedIndex].text;
+            const explanationText = explanations[selectedValue];
+            const textToSpeak = `${termName}. ${explanationText}`;
+            
+            currentUtterance = new SpeechSynthesisUtterance(textToSpeak);
+            currentUtterance.lang = selectedLanguage;
+            
+            // Configure voice options
+            const voices = speechSynthesis.getVoices();
+            const preferredVoice = voices.find(voice => 
+                voice.lang === selectedLanguage
+            );
+            
+            if (preferredVoice) {
+                currentUtterance.voice = preferredVoice;
+            }
+            
+            currentUtterance.rate = 1.0;
+            currentUtterance.pitch = 1.0;
+            
+            // Enable/disable buttons during speech
+            readBtn.disabled = true;
+            stopBtn.disabled = false;
+            
+            currentUtterance.onend = function() {
+                readBtn.disabled = false;
+                stopBtn.disabled = true;
+            };
+            
+            speechSynthesis.speak(currentUtterance);
+        }
+
+        function stopReading() {
+            if (speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+                document.getElementById("readBtn").disabled = false;
+                document.getElementById("stopBtn").disabled = true;
+            }
+        }
+
+        // Load voices when the page loads
+        window.speechSynthesis.onvoiceschanged = function() {
+            const voices = window.speechSynthesis.getVoices();
+            console.log("Available voices:", voices);
+        };
+    </script>
+</body>
+</html>
